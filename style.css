@@ -1,0 +1,134 @@
+/* 폰트 */
+@font-face {
+    font-family: 'GyeonggiTitleM';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, div, span, a, button, input, label, select, textarea {
+    font-family: 'GyeonggiTitleM', sans-serif;
+}
+
+
+/* 파일업로드 박스 텍스트 변경 */
+div[data-testid="stFileUploader"]>section[data-testid="stFileUploaderDropzone"]>button[data-testid="baseButton-secondary"] {
+   color:white;
+}
+
+div[data-testid="stFileUploader"]>section[data-testid="stFileUploaderDropzone"]>button[data-testid="baseButton-secondary"]::after {
+    content: "파일 선택";
+    color:black;
+    display: block;
+    position: absolute;
+    font-size: 20px;
+}
+
+div[data-testid="stFileUploaderDropzoneInstructions"]>div>span {
+   visibility:hidden;
+}
+
+div[data-testid="stFileUploaderDropzoneInstructions"]>div>span::after {
+   content:"파일 업로드 하기";
+   visibility:visible;
+   display:block;
+   font-size: 24px;
+}
+
+ div[data-testid="stFileUploaderDropzoneInstructions"]>div>small {
+   visibility:hidden;
+}
+
+div[data-testid="stFileUploaderDropzoneInstructions"]>div>small::before {
+   content:"25MB 이하 파일을 올려주세요";
+   visibility:visible;
+   display:block;
+}
+
+/* 툴바 숨기기 */
+div[data-testid="stToolbar"] {
+    visibility: hidden;
+    height: 0;
+    position: fixed;
+}
+
+div[data-testid="stDecoration"] {
+    visibility: hidden;
+    height: 0;
+    position: fixed;
+}
+
+div[data-testid="stStatusWidget"] {
+    visibility: hidden;
+    height: 0;
+    position: fixed;
+}
+
+#MainMenu {
+    visibility: hidden;
+    height: 0;
+}
+
+header {
+    visibility: hidden;
+    height: 0;
+}
+
+footer {
+    visibility: hidden;
+    height: 0;
+}
+
+/* 파일 업로드 박스 */
+/*section.st-emotion-cache-rvj4oc.e1b2p2ww15 {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/*Devices between 768px and 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/*Devices larger than 1024px*/
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+}
