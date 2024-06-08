@@ -12,18 +12,6 @@ body, h1, h2, h3, h4, h5, h6, p, div, span, a, button, input, label, select, tex
 
 
 /* 파일업로드 박스 텍스트 변경 */
-section[data-testid=“stFileUploaderDropzone”] > button {
-    border: solid 1px white;
-    background: #4D4D4D;
-    font-size: 0;
-    width: 45%;
-}
-section[data-testid=“stFileUploaderDropzone”] > button:after {
-    content: “test”;
-    display: block;
-    position: absolute;
-    font-size: 16px;
-}
 
 div[data-testid="stFileUploaderDropzoneInstructions"]>div>span {
    visibility:hidden;
