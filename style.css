@@ -13,6 +13,18 @@ body, h1, h2, h3, h4, h5, h6, p, div, span, a, button, input, label, select, tex
 
 /* 파일업로드 박스 텍스트 변경 */
 
+div[data-testid="stFileUploader"]>section[data-testid="stFileUploaderDropzone"]>button[data-testid="baseButton-secondary"] {
+   color:white;
+}
+
+div[data-testid="stFileUploader"]>section[data-testid="stFileUploaderDropzone"]>button[data-testid="baseButton-secondary"]::after {
+    content: "파일 선택";
+    color:black;
+    display: block;
+    position: absolute;
+    font-size: 20px;
+}
+
 div[data-testid="stFileUploaderDropzoneInstructions"]>div>span {
    visibility:hidden;
 }
