@@ -24,6 +24,8 @@ with open("style.css", encoding="UTF8") as f:
 
 st.markdown("<h1>동물상 테스트</h1>", unsafe_allow_html=True)
 st.markdown("<h2>인공지능이 여러분의 동물상을 알려줍니다!</h2>", unsafe_allow_html=True)
+st.markdown("<h3>제작: 사상고 인공지능팀</h3>", unsafe_allow_html=True)
+
 
 mode = st.radio("placeholder", ["이미지 업로드", "웹캠"], horizontal=True, label_visibility="hidden")
 
